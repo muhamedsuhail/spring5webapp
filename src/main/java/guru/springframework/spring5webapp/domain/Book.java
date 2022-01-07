@@ -13,32 +13,32 @@ import javax.persistence.ManyToMany;
 public class Book {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private int Id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long Id;
 
 	private String title;
 	private String isbn;
-	
+
 	@ManyToMany()
-	@JoinTable(name = "author_book", joinColumns = @JoinColumn(name="book_id"),inverseJoinColumns = @JoinColumn(name="author_id"))
+	@JoinTable(name = "author_book", joinColumns = @JoinColumn(name = "book_id"), inverseJoinColumns = @JoinColumn(name = "author_id"))
 	private Set<Author> authors;
 
 	public Book() {
 
 	}
 
-	public Book(int id, String title, String isbn, Set<Author> authors) {
+	public Book(Long id, String title, String isbn, Set<Author> authors) {
 		Id = id;
 		this.title = title;
 		this.isbn = isbn;
 		this.authors = authors;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return Id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		Id = id;
 	}
 
