@@ -21,8 +21,7 @@ public class Book {
 
 	}
 
-	public Book(Long id, String title, String isbn, Set<Author> authors) {
-		Id = id;
+	public Book(String title, String isbn, Set<Author> authors) {
 		this.title = title;
 		this.isbn = isbn;
 		this.authors = authors;
