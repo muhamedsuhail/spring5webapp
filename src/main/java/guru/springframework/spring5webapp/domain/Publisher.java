@@ -94,7 +94,7 @@ public class Publisher {
 	@Override
 	public String toString() {
 		return "Publisher [Id=" + Id + ", name=" + name + ", addressLine1=" + addressLine1 + ", city=" + city
-				+ ", state=" + state + ", zip=" + zip + ", books=" + books + "]";
+				+ ", state=" + state + ", zip=" + zip + "]";
 	}
 
 	@Override
