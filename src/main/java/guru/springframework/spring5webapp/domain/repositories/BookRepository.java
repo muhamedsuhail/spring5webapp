@@ -7,6 +7,6 @@ import guru.springframework.spring5webapp.domain.Book;
  * Created by muhamedsuhail on 09-Jan-2022
  */
 
-public interface BookRespository extends CrudRepository<Book, Long> {
+public interface BookRepository extends CrudRepository<Book, Long> {
 
 }
