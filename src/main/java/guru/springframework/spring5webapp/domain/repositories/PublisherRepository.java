@@ -1,6 +1,5 @@
 package guru.springframework.spring5webapp.domain.repositories;
 
-import javax.persistence.*;
 import org.springframework.data.repository.CrudRepository;
 import guru.springframework.spring5webapp.domain.Publisher;
 
